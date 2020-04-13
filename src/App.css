@@ -1,3 +1,14 @@
 .App {
+  margin: 64px;
   text-align: center;
+}
+
+.App__cell {
+  border: 1px solid black;
+  padding: 8px;
+  width: 20%;
+}
+
+.App__cell--on {
+  background-color: red;
 }
