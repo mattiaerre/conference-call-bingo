@@ -1,6 +1,7 @@
 import classnames from 'classnames';
 import React, { useReducer } from 'react';
 import './App.css';
+import getScore from './getScore';
 import labels from './labels.json';
 
 const TOGGLE = 'TOGGLE';
@@ -10,19 +11,6 @@ function makeInitialState() {
     cells: labels.map((row) => row.map((label) => ({ checked: false, label }))),
     score: 0,
   };
-}
-
-function getScore(cells) {
-  return cells.reduce((score, row) => {
-    // eslint-disable-next-line no-param-reassign, no-return-assign
-    return (score += row.reduce((rowScore, current) => {
-      if (current.checked) {
-        // eslint-disable-next-line no-param-reassign
-        rowScore += 1;
-      }
-      return rowScore;
-    }, 0));
-  }, 0);
 }
 
 function reducer(state, action) {
