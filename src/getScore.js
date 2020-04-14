@@ -1,12 +1,42 @@
 /*
 const data = [
-  [false, false, false, false, false],
-  [false, true, false, false, false],
-  [false, false, false, false, false],
-  [true, false, false, true, false],
-  [false, true, false, false, false],
+  [
+    { checked: false },
+    { checked: false },
+    { checked: true },
+    { checked: false },
+    { checked: false },
+  ],
+  [
+    { checked: false },
+    { checked: false },
+    { checked: false },
+    { checked: false },
+    { checked: false },
+  ],
+  [
+    { checked: true },
+    { checked: false },
+    { checked: false },
+    { checked: false },
+    { checked: false },
+  ],
+  [
+    { checked: false },
+    { checked: false },
+    { checked: false },
+    { checked: false },
+    { checked: true },
+  ],
+  [
+    { checked: false },
+    { checked: true },
+    { checked: false },
+    { checked: false },
+    { checked: false },
+  ],
 ];
- */
+*/
 
 function getScore(cells) {
   return cells.reduce((score, row) => {
