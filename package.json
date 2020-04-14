@@ -10,6 +10,7 @@
     "gh-pages": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-ga": "^2.7.0",
     "react-scripts": "3.4.1"
   },
   "scripts": {
@@ -39,5 +40,13 @@
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.1"
   },
-  "homepage": "https://mattiaerre.github.io/conference-call-bingo"
+  "homepage": "https://mattiaerre.github.io/conference-call-bingo",
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js",
+      "!src/initializeReactGA.js",
+      "!src/serviceWorker.js"
+    ]
+  }
 }
