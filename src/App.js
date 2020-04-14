@@ -9,7 +9,7 @@ const TOGGLE = 'TOGGLE';
 function makeInitialState() {
   return {
     cells: labels.map((row) => row.map((label) => ({ checked: false, label }))),
-    score: 0,
+    score: 0
   };
 }
 
@@ -21,7 +21,7 @@ function reducer(state, action) {
     return {
       ...state,
       cells: copy,
-      score: getScore(copy),
+      score: getScore(copy)
     };
   }
   return state;
@@ -41,7 +41,7 @@ function App() {
               {row.map(({ checked, label }, indexCell) => (
                 <td
                   className={classnames('App__cell', {
-                    'App__cell--on': checked,
+                    'App__cell--on': checked
                   })}
                   key={indexCell}
                 >
@@ -53,7 +53,7 @@ function App() {
                       dispatch({
                         indexCell,
                         indexRow,
-                        type: TOGGLE,
+                        type: TOGGLE
                       })
                     }
                     type="checkbox"
