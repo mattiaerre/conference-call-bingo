@@ -49,7 +49,7 @@ function App() {
                     checked={checked}
                     id={`${indexRow}-${indexCell}`}
                     name={`${indexRow}-${indexCell}`}
-                    onClick={() =>
+                    onChange={() =>
                       dispatch({
                         indexCell,
                         indexRow,
