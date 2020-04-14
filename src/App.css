@@ -16,3 +16,8 @@
 .App__cell--on {
   background-color: palegoldenrod;
 }
+
+.App__footer {
+  font-size: small;
+  margin: 8px;
+}

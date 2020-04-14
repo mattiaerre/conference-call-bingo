@@ -1,5 +1,6 @@
 import classnames from 'classnames';
 import React, { useReducer } from 'react';
+import { version } from '../package.json';
 import './App.css';
 import getScore from './getScore';
 import labels from './labels.json';
@@ -27,8 +28,10 @@ function reducer(state, action) {
   return state;
 }
 
+const initialState = makeInitialState();
+
 function App() {
-  const [{ cells, score }, dispatch] = useReducer(reducer, makeInitialState());
+  const [{ cells, score }, dispatch] = useReducer(reducer, initialState);
 
   return (
     <article className="App">
@@ -67,6 +70,7 @@ function App() {
           ))}
         </tbody>
       </table>
+      <footer className="App__footer">v{version}</footer>
     </article>
   );
 }
