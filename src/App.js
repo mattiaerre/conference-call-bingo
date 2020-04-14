@@ -34,6 +34,7 @@ function App() {
     <article className="App">
       <h1>Conference Call Bingo</h1>
       <h2>{score}</h2>
+      {score >= 5 && <h3>Bingo!</h3>}
       <table>
         <tbody>
           {cells.map((row, indexRow) => (
@@ -47,6 +48,7 @@ function App() {
                 >
                   <input
                     checked={checked}
+                    className="App__checkbox"
                     id={`${indexRow}-${indexCell}`}
                     name={`${indexRow}-${indexCell}`}
                     onChange={() =>

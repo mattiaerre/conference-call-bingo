@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.App__checkbox {
+  display: none;
+}
+
 .App__cell {
   border: 1px solid black;
   padding: 8px;
@@ -10,5 +14,5 @@
 }
 
 .App__cell--on {
-  background-color: red;
+  background-color: palegoldenrod;
 }
