@@ -10,6 +10,7 @@
 .App__cell {
   background-color: white;
   border: 1px solid gray;
+  height: 64px;
   padding: 8px;
   width: 20%;
 }
