@@ -45,10 +45,21 @@ function App() {
 
   return (
     <article className="App">
-      <h1>Conference Call Bingo</h1>
-      <h2>{score}</h2>
-      {score >= 5 && <h3>Bingo!</h3>}
+      <h1 className="App__h1">Conference Call Bingo</h1>
       <table>
+        <thead>
+          <tr>
+            {'Bingo'.split('').map((character, index) => (
+              <td
+                className={classnames('App__cell-head', {
+                  'App__cell-head--on': index < score
+                })}
+              >
+                {character}
+              </td>
+            ))}
+          </tr>
+        </thead>
         <tbody>
           {board.map((row, indexRow) => (
             <tr key={indexRow}>

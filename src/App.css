@@ -8,7 +8,8 @@
 }
 
 .App__cell {
-  border: 1px solid black;
+  background-color: white;
+  border: 1px solid gray;
   padding: 8px;
   width: 20%;
 }
@@ -17,7 +18,24 @@
   background-color: palegoldenrod;
 }
 
+.App__cell-head {
+  background-color: black;
+  border: 1px solid gray;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.App__cell-head--on {
+  background: red;
+}
+
 .App__footer {
+  color: darkblue;
   font-size: small;
   margin: 8px;
+}
+
+.App__h1 {
+  color: darkblue;
 }
