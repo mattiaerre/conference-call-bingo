@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b8aebaec71f8e8c66927a1d2dd0b9fe9",
+    "revision": "47a8be3eb045119d500266e1a13ad7ce",
     "url": "/conference-call-bingo/index.html"
   },
   {
-    "revision": "798575f614cb2c8339cc",
+    "revision": "8efbd8135c1518c66542",
     "url": "/conference-call-bingo/static/css/main.516cf5fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/conference-call-bingo/static/js/2.1dd79bfd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "798575f614cb2c8339cc",
-    "url": "/conference-call-bingo/static/js/main.4eedec53.chunk.js"
+    "revision": "8efbd8135c1518c66542",
+    "url": "/conference-call-bingo/static/js/main.4c51ce1d.chunk.js"
   },
   {
     "revision": "1339bc01241bcdaf100b",
