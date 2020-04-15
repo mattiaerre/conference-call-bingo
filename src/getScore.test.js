@@ -1,4 +1,4 @@
-import getScore from './getScore';
+import getScore, { getScore1, getScore2 } from './getScore';
 
 const none = [
   [
@@ -42,12 +42,12 @@ const scenarios = [
   {
     description: 'no marks',
     expected: 0,
-    marks: JSON.parse(JSON.stringify(none))
+    board: JSON.parse(JSON.stringify(none))
   },
   {
     description: '1 mark',
     expected: 1,
-    marks: (() => {
+    board: (() => {
       const copy = JSON.parse(JSON.stringify(none));
       copy[1][1] = { checked: true };
       return copy;
@@ -56,7 +56,7 @@ const scenarios = [
   {
     description: '2 marks',
     expected: 2,
-    marks: (() => {
+    board: (() => {
       const copy = JSON.parse(JSON.stringify(none));
       copy[1][1] = { checked: true };
       copy[2][2] = { checked: true };
@@ -66,7 +66,7 @@ const scenarios = [
   {
     description: '5 marks',
     expected: 5,
-    marks: (() => {
+    board: (() => {
       const copy = JSON.parse(JSON.stringify(none));
       copy[0][2] = { checked: true };
       copy[1][0] = { checked: true };
@@ -79,12 +79,14 @@ const scenarios = [
   {
     description: '25 marks',
     expected: 25,
-    marks: JSON.parse(JSON.stringify(none).replace(/false/g, 'true'))
+    board: JSON.parse(JSON.stringify(none).replace(/false/g, 'true'))
   }
 ];
 
-scenarios.forEach(({ description, expected, marks }) => {
+scenarios.forEach(({ description, expected, board }) => {
   test(description, () => {
-    expect(getScore(marks)).toEqual(expected);
+    expect(getScore(board)).toEqual(expected);
+    expect(getScore1(board)).toEqual(expected);
+    expect(getScore2(board)).toEqual(expected);
   });
 });

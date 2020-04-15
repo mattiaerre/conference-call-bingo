@@ -10,14 +10,14 @@ const TOGGLE = 'TOGGLE';
 
 function makeInitialState() {
   return {
-    cells: labels.map((row) => row.map((label) => ({ checked: false, label }))),
+    board: labels.map((row) => row.map((label) => ({ checked: false, label }))),
     score: 0
   };
 }
 
 function reducer(state, action) {
   if (action.type === TOGGLE) {
-    const copy = JSON.parse(JSON.stringify(state.cells));
+    const copy = JSON.parse(JSON.stringify(state.board));
     const cell = copy[action.indexRow][action.indexCell];
     cell.checked = !cell.checked;
 
@@ -31,7 +31,7 @@ function reducer(state, action) {
 
     return {
       ...state,
-      cells: copy,
+      board: copy,
       score: getScore(copy)
     };
   }
@@ -41,7 +41,7 @@ function reducer(state, action) {
 const initialState = makeInitialState();
 
 function App() {
-  const [{ cells, score }, dispatch] = useReducer(reducer, initialState);
+  const [{ board, score }, dispatch] = useReducer(reducer, initialState);
 
   return (
     <article className="App">
@@ -50,7 +50,7 @@ function App() {
       {score >= 5 && <h3>Bingo!</h3>}
       <table>
         <tbody>
-          {cells.map((row, indexRow) => (
+          {board.map((row, indexRow) => (
             <tr key={indexRow}>
               {row.map(({ checked, label }, indexCell) => (
                 <td
