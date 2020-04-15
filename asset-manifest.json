@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/conference-call-bingo/static/css/main.516cf5fb.chunk.css",
-    "main.js": "/conference-call-bingo/static/js/main.87d2f887.chunk.js",
-    "main.js.map": "/conference-call-bingo/static/js/main.87d2f887.chunk.js.map",
+    "main.js": "/conference-call-bingo/static/js/main.4eedec53.chunk.js",
+    "main.js.map": "/conference-call-bingo/static/js/main.4eedec53.chunk.js.map",
     "runtime-main.js": "/conference-call-bingo/static/js/runtime-main.dae88842.js",
     "runtime-main.js.map": "/conference-call-bingo/static/js/runtime-main.dae88842.js.map",
-    "static/js/2.6dfbf8d9.chunk.js": "/conference-call-bingo/static/js/2.6dfbf8d9.chunk.js",
-    "static/js/2.6dfbf8d9.chunk.js.map": "/conference-call-bingo/static/js/2.6dfbf8d9.chunk.js.map",
+    "static/js/2.1dd79bfd.chunk.js": "/conference-call-bingo/static/js/2.1dd79bfd.chunk.js",
+    "static/js/2.1dd79bfd.chunk.js.map": "/conference-call-bingo/static/js/2.1dd79bfd.chunk.js.map",
     "index.html": "/conference-call-bingo/index.html",
-    "precache-manifest.8a775c531eb0fc53f6180e9f78a17054.js": "/conference-call-bingo/precache-manifest.8a775c531eb0fc53f6180e9f78a17054.js",
+    "precache-manifest.d431661365b3afd8f59080bbe8f9b65b.js": "/conference-call-bingo/precache-manifest.d431661365b3afd8f59080bbe8f9b65b.js",
     "service-worker.js": "/conference-call-bingo/service-worker.js",
     "static/css/main.516cf5fb.chunk.css.map": "/conference-call-bingo/static/css/main.516cf5fb.chunk.css.map",
-    "static/js/2.6dfbf8d9.chunk.js.LICENSE.txt": "/conference-call-bingo/static/js/2.6dfbf8d9.chunk.js.LICENSE.txt"
+    "static/js/2.1dd79bfd.chunk.js.LICENSE.txt": "/conference-call-bingo/static/js/2.1dd79bfd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.dae88842.js",
-    "static/js/2.6dfbf8d9.chunk.js",
+    "static/js/2.1dd79bfd.chunk.js",
     "static/css/main.516cf5fb.chunk.css",
-    "static/js/main.87d2f887.chunk.js"
+    "static/js/main.4eedec53.chunk.js"
   ]
 }
