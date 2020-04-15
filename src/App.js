@@ -25,7 +25,8 @@ function reducer(state, action) {
     ReactGA.event({
       action: action.type,
       category: 'Bingo',
-      label: action.label
+      label: action.label,
+      value: cell.checked ? 1 : 0
     });
 
     return {
