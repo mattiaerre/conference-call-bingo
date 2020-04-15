@@ -1,5 +1,6 @@
 import classnames from 'classnames';
 import React, { useReducer } from 'react';
+import ReactGA from 'react-ga';
 import { version } from '../package.json';
 import './App.css';
 import getScore from './getScore';
@@ -19,6 +20,14 @@ function reducer(state, action) {
     const copy = JSON.parse(JSON.stringify(state.cells));
     const cell = copy[action.indexRow][action.indexCell];
     cell.checked = !cell.checked;
+
+    // TODO: decorate the reducer
+    ReactGA.event({
+      action: action.type,
+      category: 'Bingo',
+      label: action.label
+    });
+
     return {
       ...state,
       cells: copy,
@@ -58,6 +67,7 @@ function App() {
                       dispatch({
                         indexCell,
                         indexRow,
+                        label,
                         type: TOGGLE
                       })
                     }
